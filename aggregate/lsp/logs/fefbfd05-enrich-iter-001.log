@@ -1,59 +1,71 @@
-[2026-10-01T09:09:57Z] === ENRICH ITERATION 1 START | repo=block/buzz-app sha=fefbfd05 ===
-[2026-10-01T09:09:57Z] [iter=1] PHASE START: enrich repo=block/buzz-app sha=fefbfd05 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fefbfd05-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fefbfd05f60c5fe8623fcbc51dcd066e7be6043a.nq.gz
-[2026-10-01T09:10:46Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=83 MB
-[2026-10-01T09:11:31Z] [iter=1] AST store loaded triples=4856378 load_secs=43 mem_mb=1043 MB
-[2026-10-01T09:11:31Z] [iter=1] Step 2: Finding LSP targets mem_mb=1043 MB
-[2026-10-01T09:11:39Z] [iter=1] LSP targets found call_sites=59383 imports=2308 extends=4 implements=18 secs=7
-[2026-10-01T09:11:40Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1043 MB
-[2026-10-01T09:12:10Z] [iter=1] Position index built positions=310738 nodes_with_types=384748 secs=30 mem_mb=1120 MB
-[2026-10-01T09:12:10Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1120 MB already_completed_types=[] already_completed_files=0
-[2026-10-01T09:12:10Z] [iter=1] Resolving target type target_type=call_site count=59383
-[2026-10-01T09:13:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.8 files_done=0 resolved=0 errors=0 current=crates/agent-controller/src/runtime/tests.rs
-[2026-10-01T09:21:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.4 files_done=1 resolved=1918 errors=209 current=crates/agent-controller/src/credentials/tests.rs
-[2026-10-01T09:23:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.1 files_done=2 resolved=2287 errors=260 current=crates/plugin-manager/src/lib.rs
-[2026-10-01T09:25:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.2 files_done=3 resolved=2633 errors=325 current=src-tauri/src/relay/agent.rs
-[2026-10-01T09:28:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.3 files_done=4 resolved=3058 errors=407 current=crates/agent-controller/src/store/tests.rs
-[2026-10-01T09:31:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=5 resolved=3449 errors=500 current=crates/agent-controller/src/supervisor.rs
-[2026-10-01T09:31:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.0 files_done=6 resolved=3825 errors=520 current=crates/agent-controller/src/store.rs
-[2026-10-01T09:32:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.6 files_done=7 resolved=3955 errors=539 current=crates/agent-controller/src/logs.rs
-[2026-10-01T09:33:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.3 files_done=8 resolved=4071 errors=558 current=crates/agent-controller/tests/avatar_profile.rs
-[2026-10-01T09:34:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.4 files_done=9 resolved=4191 errors=592 current=src-tauri/src/relay/media_preparation.rs
-[2026-10-01T09:35:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.1 files_done=10 resolved=4439 errors=612 current=src-tauri/src/pi_models/tests.rs
-[2026-10-01T09:35:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.8 files_done=11 resolved=4568 errors=633 current=src-tauri/src/agents.rs
-[2026-10-01T09:38:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.5 files_done=12 resolved=4904 errors=717 current=crates/agent-controller/src/agent_defaults.rs
-[2026-10-01T09:40:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.5 files_done=14 resolved=5793 errors=775 current=src-tauri/src/agent_models/bundled_tests.rs
-[2026-10-01T09:41:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=16 resolved=6048 errors=796 current=src-tauri/src/goose_models.rs
-[2026-10-01T09:41:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.7 files_done=20 resolved=6393 errors=811 current=src-tauri/src/terminal/unix.rs
-[2026-10-01T09:42:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.5 files_done=21 resolved=6535 errors=834 current=crates/agent-controller/src/bundle/macos.rs
-[2026-10-01T09:43:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.3 files_done=25 resolved=6677 errors=857 current=crates/agent-controller/src/connection.rs
-[2026-10-01T09:43:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.0 files_done=27 resolved=6739 errors=876 current=src-tauri/src/pi_models.rs
-[2026-10-01T10:17:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.9 files_done=31 resolved=7032 errors=1886 current=src/shared/theme/service.test.ts
-[2026-10-01T10:20:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.9 files_done=32 resolved=7118 errors=1973 current=src/features/communities/CommunityRail.test.tsx
-[2026-10-01T10:34:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.5 files_done=33 resolved=7157 errors=2375 current=src/bundled/agents/AgentControlPanel.test.tsx
-[2026-10-01T10:36:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.8 files_done=34 resolved=7194 errors=2444 current=src/bundled/channels/ChannelSettingsPanel.test.tsx
-[2026-10-01T10:40:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.5 files_done=35 resolved=7194 errors=2557 current=src/app/ShortcutSettings.test.tsx
-[2026-10-01T10:50:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.3 files_done=36 resolved=7242 errors=2852 current=src/features/messages/MediaAttachment.video.test.tsx
-[2026-10-01T10:51:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.7 files_done=37 resolved=7252 errors=2892 current=src/bundled/channels/useChannelTabState.ts
-[2026-10-01T10:52:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.3 files_done=38 resolved=7257 errors=2912 current=src/bundled/hosted-communities/HostedCommunities.tsx
-[2026-10-01T10:55:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.1 files_done=39 resolved=7314 errors=2995 current=src/features/notifications/messages.test.ts
-[2026-10-01T11:06:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.2 files_done=40 resolved=7376 errors=3332 current=src/features/sessions/SessionMessageTarget.test.tsx
-[2026-10-01T11:08:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.3 files_done=41 resolved=7390 errors=3394 current=src/features/communities/join-journal.test.ts
-[2026-10-01T11:11:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.8 files_done=42 resolved=7408 errors=3499 current=src/bundled/channels/DmTypingBadge.test.tsx
-[2026-10-01T11:15:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.9 files_done=43 resolved=7425 errors=3623 current=src/features/messages/MessageEdit.integration.test.tsx
-[2026-10-01T11:20:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.3 files_done=44 resolved=7458 errors=3756 current=src/features/messages/MessageComposer.test.tsx
-[2026-10-01T11:46:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=157.0 files_done=45 resolved=7605 errors=4555 current=src/features/relay/unread.test.ts
-[2026-10-01T12:28:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=198.7 files_done=46 resolved=7695 errors=5812 current=src/bundled/moderation/CommunityAdmin.tsx
-[2026-10-01T12:31:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=201.3 files_done=47 resolved=7725 errors=5889 current=src/features/relay/emoji.test.ts
-[2026-10-01T12:40:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=210.8 files_done=48 resolved=7875 errors=6177 current=src/features/shortcuts/preferences.test.ts
-[2026-10-01T12:42:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=212.3 files_done=49 resolved=7952 errors=6221 current=src/features/identity-names/directory.test.ts
-[2026-10-01T12:46:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=216.7 files_done=50 resolved=7992 errors=6356 current=src/features/communities/CommunityRail.native.test.tsx
-[2026-10-01T12:47:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=217.4 files_done=51 resolved=7995 errors=6375 current=src/features/panels/PanelSubview.test.tsx
-[2026-10-01T12:47:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=218.0 files_done=52 resolved=7995 errors=6394 current=src/features/relay/transport.test.ts
-[2026-10-01T12:51:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=221.3 files_done=53 resolved=8079 errors=6494 current=src/features/developer/logging.test.ts
-[2026-10-01T12:52:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=222.5 files_done=54 resolved=8121 errors=6529 current=src/features/relay/live-restriction.test.ts
-[2026-10-01T13:01:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.2 files_done=55 resolved=8175 errors=6793 current=src/features/workflows/session.test.ts
-[2026-10-01T13:07:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=237.8 files_done=56 resolved=8266 errors=6992 current=src/bundled/profiles/ProfileRuntime.test.tsx
-[2026-10-01T13:10:09Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.2 files_completed=56 new_files_this_iter=56 mem_mb=1122 MB
-[2026-10-01T13:10:09Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/fefbfd05f60c5fe8623fcbc51dcd066e7be6043a.nq.gz triples=98327
-[2026-10-01T13:10:10Z] [iter=1] Checkpoint written, exiting with code 7
-[2026-10-01T13:10:10Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14412 elapsed_min=240.2 files_completed=56
+[2026-10-01T09:10:37Z] === ENRICH ITERATION 1 START | repo=block/buzz-app sha=fefbfd05 ===
+[2026-10-01T09:10:37Z] [iter=1] PHASE START: enrich repo=block/buzz-app sha=fefbfd05 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fefbfd05-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fefbfd05f60c5fe8623fcbc51dcd066e7be6043a.nq.gz
+[2026-10-01T09:11:42Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=84 MB
+[2026-10-01T09:12:45Z] [iter=1] AST store loaded triples=4856378 load_secs=62 mem_mb=941 MB
+[2026-10-01T09:12:45Z] [iter=1] Step 2: Finding LSP targets mem_mb=941 MB
+[2026-10-01T09:12:50Z] [iter=1] LSP targets found call_sites=59383 imports=2308 extends=4 implements=18 secs=5
+[2026-10-01T09:12:51Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=941 MB
+[2026-10-01T09:13:13Z] [iter=1] Position index built positions=310738 nodes_with_types=384748 secs=22 mem_mb=1014 MB
+[2026-10-01T09:13:13Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1014 MB already_completed_types=[] already_completed_files=0
+[2026-10-01T09:13:13Z] [iter=1] Resolving target type target_type=call_site count=59383
+[2026-10-01T09:14:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=0 resolved=0 errors=0 current=crates/agent-controller/src/runtime/tests.rs
+[2026-10-01T09:21:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.5 files_done=1 resolved=1926 errors=211 current=crates/agent-controller/src/credentials/tests.rs
+[2026-10-01T09:22:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.8 files_done=2 resolved=2295 errors=262 current=crates/plugin-manager/src/lib.rs
+[2026-10-01T09:24:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.6 files_done=3 resolved=2641 errors=327 current=src-tauri/src/relay/agent.rs
+[2026-10-01T09:26:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.1 files_done=4 resolved=3066 errors=409 current=crates/agent-controller/src/store/tests.rs
+[2026-10-01T09:29:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=5 resolved=3457 errors=502 current=crates/agent-controller/src/supervisor.rs
+[2026-10-01T09:29:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.1 files_done=6 resolved=3833 errors=522 current=crates/agent-controller/src/store.rs
+[2026-10-01T09:30:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.6 files_done=7 resolved=3963 errors=541 current=crates/agent-controller/src/logs.rs
+[2026-10-01T09:30:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.1 files_done=8 resolved=4079 errors=560 current=crates/agent-controller/tests/avatar_profile.rs
+[2026-10-01T09:31:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.0 files_done=9 resolved=4199 errors=594 current=src-tauri/src/relay/media_preparation.rs
+[2026-10-01T09:32:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.6 files_done=10 resolved=4447 errors=614 current=src-tauri/src/pi_models/tests.rs
+[2026-10-01T09:32:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.1 files_done=11 resolved=4576 errors=635 current=src-tauri/src/agents.rs
+[2026-10-01T09:34:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.4 files_done=12 resolved=4912 errors=719 current=crates/agent-controller/src/agent_defaults.rs
+[2026-10-01T09:36:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.9 files_done=14 resolved=5801 errors=777 current=src-tauri/src/agent_models/bundled_tests.rs
+[2026-10-01T09:37:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=16 resolved=6056 errors=798 current=src-tauri/src/goose_models.rs
+[2026-10-01T09:38:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.6 files_done=21 resolved=6543 errors=836 current=crates/agent-controller/src/bundle/macos.rs
+[2026-10-01T09:38:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.3 files_done=25 resolved=6685 errors=859 current=crates/agent-controller/src/connection.rs
+[2026-10-01T09:39:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.8 files_done=27 resolved=6747 errors=878 current=src-tauri/src/pi_models.rs
+[2026-10-01T10:06:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.8 files_done=31 resolved=7040 errors=1888 current=src/shared/theme/service.test.ts
+[2026-10-01T10:08:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.1 files_done=32 resolved=7126 errors=1975 current=src/features/communities/CommunityRail.test.tsx
+[2026-10-01T10:19:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.8 files_done=33 resolved=7165 errors=2377 current=src/bundled/agents/AgentControlPanel.test.tsx
+[2026-10-01T10:21:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.6 files_done=34 resolved=7202 errors=2446 current=src/bundled/channels/ChannelSettingsPanel.test.tsx
+[2026-10-01T10:24:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.7 files_done=35 resolved=7202 errors=2559 current=src/app/ShortcutSettings.test.tsx
+[2026-10-01T10:32:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.6 files_done=36 resolved=7250 errors=2854 current=src/features/messages/MediaAttachment.video.test.tsx
+[2026-10-01T10:33:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.6 files_done=37 resolved=7260 errors=2894 current=src/bundled/channels/useChannelTabState.ts
+[2026-10-01T10:33:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.2 files_done=38 resolved=7265 errors=2914 current=src/bundled/hosted-communities/HostedCommunities.tsx
+[2026-10-01T10:36:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.4 files_done=39 resolved=7322 errors=2997 current=src/features/notifications/messages.test.ts
+[2026-10-01T10:44:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.3 files_done=40 resolved=7384 errors=3334 current=src/features/sessions/SessionMessageTarget.test.tsx
+[2026-10-01T10:46:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.0 files_done=41 resolved=7398 errors=3396 current=src/features/communities/join-journal.test.ts
+[2026-10-01T10:49:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.8 files_done=42 resolved=7416 errors=3501 current=src/bundled/channels/DmTypingBadge.test.tsx
+[2026-10-01T10:52:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.1 files_done=43 resolved=7433 errors=3625 current=src/features/messages/MessageEdit.integration.test.tsx
+[2026-10-01T10:56:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.6 files_done=44 resolved=7466 errors=3758 current=src/features/messages/MessageComposer.test.tsx
+[2026-10-01T11:17:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.8 files_done=45 resolved=7613 errors=4557 current=src/features/relay/unread.test.ts
+[2026-10-01T11:50:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.2 files_done=46 resolved=7703 errors=5814 current=src/bundled/moderation/CommunityAdmin.tsx
+[2026-10-01T11:52:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=162.2 files_done=47 resolved=7733 errors=5891 current=src/features/relay/emoji.test.ts
+[2026-10-01T12:00:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=169.9 files_done=48 resolved=7883 errors=6179 current=src/features/shortcuts/preferences.test.ts
+[2026-10-01T12:01:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=171.0 files_done=49 resolved=7960 errors=6223 current=src/features/identity-names/directory.test.ts
+[2026-10-01T12:05:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=174.6 files_done=50 resolved=8000 errors=6358 current=src/features/communities/CommunityRail.native.test.tsx
+[2026-10-01T12:05:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=175.1 files_done=51 resolved=8003 errors=6377 current=src/features/panels/PanelSubview.test.tsx
+[2026-10-01T12:06:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=175.7 files_done=52 resolved=8003 errors=6396 current=src/features/relay/transport.test.ts
+[2026-10-01T12:08:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=178.4 files_done=53 resolved=8087 errors=6496 current=src/features/developer/logging.test.ts
+[2026-10-01T12:09:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=179.3 files_done=54 resolved=8129 errors=6531 current=src/features/relay/live-restriction.test.ts
+[2026-10-01T12:16:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=186.3 files_done=55 resolved=8183 errors=6795 current=src/features/workflows/session.test.ts
+[2026-10-01T12:22:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=191.7 files_done=56 resolved=8274 errors=6994 current=src/bundled/profiles/ProfileRuntime.test.tsx
+[2026-10-01T12:24:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=194.1 files_done=57 resolved=8283 errors=7086 current=src/features/relay/mentions-live.test.ts
+[2026-10-01T12:29:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=199.0 files_done=58 resolved=8347 errors=7271 current=tests/fixtures/mentions.tsx
+[2026-10-01T12:30:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=199.9 files_done=59 resolved=8405 errors=7305 current=src/bundled/channels/CreateChannelDialog.test.tsx
+[2026-10-01T12:32:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=202.0 files_done=60 resolved=8409 errors=7383 current=src/bundled/todos/TodosPanel.test.tsx
+[2026-10-01T12:39:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=208.7 files_done=61 resolved=8449 errors=7636 current=src/features/direct-messages/NewMessage.test.tsx
+[2026-10-01T12:47:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=217.1 files_done=62 resolved=8512 errors=7949 current=src/features/relay/sidebar-preferences-store.ts
+[2026-10-01T12:49:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=218.4 files_done=63 resolved=8618 errors=7999 current=src/features/relay/sidebar-preferences.test.ts
+[2026-10-01T12:55:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=224.4 files_done=64 resolved=8673 errors=8226 current=src/bundled/channels/ChannelActivityPopover.test.tsx
+[2026-10-01T12:55:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=225.3 files_done=65 resolved=8682 errors=8261 current=src/bundled/agents/AgentModelPicker.test.tsx
+[2026-10-01T13:00:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=230.4 files_done=66 resolved=8743 errors=8451 current=src/bundled/emoji/emoji-search.ts
+[2026-10-01T13:02:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.7 files_done=69 resolved=8788 errors=8501 current=src/features/agents/activity-records.test.ts
+[2026-10-01T13:06:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=236.4 files_done=71 resolved=9142 errors=8677 current=src/features/messages/AudioAttachment.test.tsx
+[2026-10-01T13:08:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=238.3 files_done=72 resolved=9149 errors=8751 current=src/bundled/channels/ChannelLifecycleMenu.test.tsx
+[2026-10-01T13:10:40Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=72 new_files_this_iter=72 mem_mb=1126 MB
+[2026-10-01T13:10:40Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/fefbfd05f60c5fe8623fcbc51dcd066e7be6043a.nq.gz triples=113636
+[2026-10-01T13:10:41Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-10-01T13:10:41Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14403 elapsed_min=240.1 files_completed=72
