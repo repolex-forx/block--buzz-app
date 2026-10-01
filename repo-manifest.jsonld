@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/block/buzz-app/commit/fefbfd05f60c5fe8623fcbc51dcd066e7be6043a",
       "git:hexsha": "fefbfd05f60c5fe8623fcbc51dcd066e7be6043a",
-      "repolex:parseStatus": "metadata_complete",
+      "repolex:parseStatus": "ast_complete",
       "git:tagName": "v0.0.0-preview.36.1"
     },
     {
