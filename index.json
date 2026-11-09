@@ -1,0 +1,16 @@
+{
+  "org": "block",
+  "repo": "buzz-app",
+  "versions": [
+    {
+      "commit": "3a1eb5601e997811009d01601786df8af9393a7f",
+      "tag": "",
+      "parsed_at": "2026-11-09T17:31:34.715382+00:00"
+    },
+    {
+      "commit": "fefbfd05f60c5fe8623fcbc51dcd066e7be6043a",
+      "tag": "main",
+      "parsed_at": "2026-10-01T08:59:16.083372+00:00"
+    }
+  ]
+}
