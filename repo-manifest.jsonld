@@ -134,7 +134,7 @@
     {
       "@id": "https://repolex.ai/r/block/buzz-app/commit/3a1eb5601e997811009d01601786df8af9393a7f",
       "git:hexsha": "3a1eb5601e997811009d01601786df8af9393a7f",
-      "repolex:parseStatus": "metadata_complete"
+      "repolex:parseStatus": "ast_complete"
     },
     {
       "@id": "https://repolex.ai/r/block/buzz-app/commit/7da6101cf72c42f7c40c3b0e8c6695f162738653",
